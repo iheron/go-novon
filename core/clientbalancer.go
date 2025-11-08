@@ -16,10 +16,20 @@ var clientSendIndex = 0
 func (s *Streamer) getNextClient() *nkn.Client {
 	clientId := clientSendIndex % NUM_SUB_CLIENTS
 	client := s.nknClient.GetClient(clientId)
+
 	clientSendIndex++
 
-	if client == nil {
+	if client == nil || !client.HasConnection {
+
+		if client == nil {
+			log.Println("Skipped client; null.", clientSendIndex)
+		} else {
+			log.Println("Skipped client; no connection.", clientSendIndex)
+		}
+
 		client = s.getNextClient()
+	} else {
+		log.Println("Used client;", clientSendIndex)
 	}
 
 	return client
