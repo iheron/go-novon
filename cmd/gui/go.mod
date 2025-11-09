@@ -62,7 +62,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/nknorg/ncp-go v1.0.7-0.20240928081416-1a805ec168d0 // indirect
-	github.com/nknorg/nkn-sdk-go v1.4.8 // indirect
+	github.com/nknorg/nkn-sdk-go v1.4.9-0.20250718092920-5d1593ad7642 // indirect
 	github.com/nknorg/nkn/v2 v2.2.2-0.20240928085955-e2b4ca607271 // indirect
 	github.com/nknorg/nkngomobile v0.0.0-20220615081414-671ad1afdfa9 // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
@@ -121,7 +121,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-// replace github.com/wailsapp/wails/v2 v2.10.2 => C:\Users\mitch\go\pkg\mod
 replace github.com/MutsiMutsi/go-novon v0.0.0 => ../..
 
 replace code.cloudfoundry.org/bytefmt => github.com/cloudfoundry/bytefmt v0.0.0-20211005130812-5bb3c17173e5
@@ -133,5 +132,3 @@ replace github.com/pion/webrtc/v3 => github.com/aler9/webrtc/v3 v3.0.0-202311122
 replace github.com/bluenviron/gohlslib => github.com/mutsimutsi/gohlslib v1.0.0
 
 replace github.com/bluenviron/mediamtx => github.com/mutsimutsi/mediamtx v1.0.2
-
-replace github.com/nknorg/nkn-sdk-go v1.4.8 => C:\Users\mitch\Documents\Repositories\nkn-sdk-go

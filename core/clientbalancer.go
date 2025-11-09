@@ -20,16 +20,7 @@ func (s *Streamer) getNextClient() *nkn.Client {
 	clientSendIndex++
 
 	if client == nil || !client.HasConnection {
-
-		if client == nil {
-			log.Println("Skipped client; null.", clientSendIndex)
-		} else {
-			log.Println("Skipped client; no connection.", clientSendIndex)
-		}
-
 		client = s.getNextClient()
-	} else {
-		log.Println("Used client;", clientSendIndex)
 	}
 
 	return client

@@ -95,7 +95,7 @@ require (
 )
 
 require (
-	github.com/nknorg/nkn-sdk-go v1.4.8
+	github.com/nknorg/nkn-sdk-go v1.4.9-0.20250718092920-5d1593ad7642
 	google.golang.org/protobuf v1.34.2
 )
 
@@ -114,7 +114,3 @@ replace github.com/pion/webrtc/v3 => github.com/aler9/webrtc/v3 v3.0.0-202311122
 replace github.com/bluenviron/gohlslib => github.com/mutsimutsi/gohlslib v1.0.0
 
 replace github.com/bluenviron/mediamtx => github.com/mutsimutsi/mediamtx v1.0.2
-
-replace github.com/nknorg/nkn/v2 v2.2.2-0.20240928085955-e2b4ca607271 => C:\Users\mitch\Documents\Repositories\nkn
-
-replace github.com/nknorg/nkn-sdk-go v1.4.8 => C:\Users\mitch\Documents\Repositories\nkn-sdk-go
